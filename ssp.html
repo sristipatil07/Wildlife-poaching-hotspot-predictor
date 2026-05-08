@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wildlife Poaching Hotspot Predictor</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f4f4f4; line-height:1.6; }
+    header { background:#1b5e20; color:white; padding:30px; text-align:center; }
+    section { padding:40px; max-width:1000px; margin:auto; }
+    h2 { color:#1b5e20; margin-top:20px; }
+    p { margin-bottom:15px; }
+    img { width:100%; border-radius:8px; margin:20px 0; }
+    .risk { display:flex; gap:20px; margin-top:20px; }
+    .risk div { flex:1; padding:20px; border-radius:8px; color:white; text-align:center; font-weight:bold; }
+    .high { background:#c62828; }
+    .medium { background:#f9a825; }
+    .low { background:#2e7d32; }
+    ol { margin-left:20px; }
+    footer { background:#333; color:white; text-align:center; padding:20px; margin-top:40px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Wildlife Poaching Hotspot Predictor</h1>
+    <p>AI-driven conservation tool to safeguard endangered species</p>
+  </header>
+
+  <section>
+    <h2>Project Overview</h2>
+    <p>
+      Wildlife poaching poses a severe threat to biodiversity and conservation efforts. 
+      This project uses historical poaching incident records combined with geospatial features 
+      such as proximity to roads, water sources, park boundaries, vegetation density, and seasonal patterns 
+      to predict which areas within a protected reserve are at elevated risk in the coming month.
+    </p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/African_elephant.jpg" alt="African Elephant in the wild">
+  </section>
+
+  <section>
+    <h2>Methodology</h2>
+    <p>
+      The prediction model is built using machine learning techniques applied to spatially gridded data. 
+      Each grid cell is analyzed for environmental and human-accessibility features. 
+      Historical poaching records provide the training labels, while geospatial layers supply predictive features.
+    </p>
+    <ol>
+      <li>Collect and preprocess poaching incident data.</li>
+      <li>Integrate geospatial features (roads, water, vegetation, park boundaries).</li>
+      <li>Train ML model to classify grid cells by risk level.</li>
+      <li>Evaluate performance using precision and recall metrics.</li>
+      <li>Generate risk heatmap overlay for visualization.</li>
+      <li>Derive patrol prioritization strategy from model outputs.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Risk Zones</h2>
+    <p>The model categorizes protected areas into three risk levels:</p>
+    <div class="risk">
+      <div class="high">High Risk<br>Immediate patrol priority</div>
+      <div class="medium">Medium Risk<br>Regular monitoring</div>
+      <div class="low">Low Risk<br>Routine checks</div>
+    </div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Tiger_in_Ranthambhore.jpg" alt="Tiger in Ranthambhore National Park">
+  </section>
+
+  <section>
+    <h2>Expected Outcomes</h2>
+    <p>
+      The project delivers three key outputs:
+    </p>
+    <ul>
+      <li><strong>Model Metrics:</strong> Precision, recall, and F1-score to validate predictive accuracy.</li>
+      <li><strong>Risk Heatmap:</strong> Visual overlay highlighting hotspots within the protected area.</li>
+      <li><strong>Patrol Strategy:</strong> Recommended patrol prioritization to optimize conservation resources.</li>
+    </ul>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Forest_in_India.jpg" alt="Protected forest landscape">
+  </section>
+
+  <footer>
+    <p>© 2026 Wildlife Poaching Hotspot Predictor | Hackathon Project</p>
+  </footer>
+</body>
+</html>
